@@ -146,6 +146,11 @@ img{
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.5);
 }
 
+.card:hover, .card-image{
+    background-color: rgba(254,205,78,0.5);
+    color: black;
+}
+
 .card-content{
     text-align: center;
 }
@@ -190,10 +195,75 @@ img{
     height: 50px;
 }
 
+ul{
+    list-style: none;
+}
+
+:root {
+    --white: black;
+}
+
+.nav {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+    float: right;
+    width: fit-content;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 36px;
+    padding: 10px;
+    margin-top: 34px;
+    background: transparent;
+}
+
+.burger-line {
+    background: var(--white);
+    height: 4.5px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+}
+
+.burger-line::before, .burger-line::after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.burger-line::before {
+    top: -12px;
+}
+
+.burger-line::after {
+    top: 12px;
+}
+
+.side-menu:checked ~ .nav {
+    max-height: 200px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.burger-nav{
+    display: flex;
+}
+
 @media screen and (max-width: 929px){
-    .header{
-        flex-direction: column;
-    }
+
     .header a{
         float: none;
         display: block;
@@ -210,7 +280,6 @@ img{
         justify-content: space-evenly;
     }
     .flex-container{
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
@@ -219,6 +288,18 @@ img{
 
     .card{
         max-width: 90%;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    a.directories{
+        display: none;
     }
 }
 

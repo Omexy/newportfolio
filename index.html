@@ -7,15 +7,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Daniel Game</title>
 </head>
 <body>
     <div class="header">
-        <a href="./index.html" class="logo">Daniel Game</a>
+        <div>
+            <a href="./index.html" class="logo">Daniel Game</a>
+        </div>
         <div class="header-right wrapper">
+            <div class="burger-nav">
+                <input class="side-menu" type="checkbox" id="side-menu">
+                <label class="burger" for="side-menu"><span class="burger-line"></span></label>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="./about.html">About Me</a></li>
+                        <li><a href="./work.html">My Work</a></li>
+                    </ul>
+                </nav>
+            </div>
             <a class="directories" href="">Home</a>
             <a class="directories" href="./about.html">About Me</a>
-            <a class="directories" href="#my_work">My Work</a>
+            <a class="directories" href="./work.html">My Work</a>
         </div>
     </div>
     <div class="hero-image">
@@ -24,7 +38,7 @@
             <p>I am a 17 year old student with many talents.</p>
             <div class="buttons">
                 <a class="hero-button" href="./about.html">About Me</a>
-                <a class="hero-button" href="#my_work">My Work</a>
+                <a class="hero-button" href="./work.html">My Work</a>
             </div>
         </div>
     </div>
@@ -32,25 +46,29 @@
     <div class="flex-container">
         <div class="card">
             <div class="card-content">
-                <img src="./img/controller-overlay.png" class="card-image">
-                <div>
-                </div>
+                <a href="./overlays.html">
+                    <img src="./img/controller-overlay.png" class="card-image">
+                </a>
             </div>
         </div>
         <div class="card">
             <div class="card-content">
-                <img src="./img/pc-spec-lists.png" class="card-image">
+                <a href="./lists.html">
+                    <img src="./img/pc-spec-lists.png" class="card-image">
+                </a>
             </div>
         </div>
         <div class="card">
             <div class="card-content">
-                <img src="./img/placeholder.png" class="card-image">
+                <a href="">
+                    <img src="./img/placeholder.png" class="card-image">
+                </a>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="socials">
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com/danielgame06" target="_blank">
                 <img src="./img/facebook.png">
             </a>
             <a href="https://instagram.com/danielgame06" target="_blank">
